@@ -6,7 +6,7 @@ jobs:
   linting:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: DoozyX/clang-format-lint-action@v0.13
         with:
           source: 'Source Tests Plugins'
@@ -19,7 +19,7 @@ jobs:
     container: stonepreston/juce-x86_64-compiler:latest
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: recursive
 
